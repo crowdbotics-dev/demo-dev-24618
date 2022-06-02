@@ -22,3 +22,13 @@ class Post(models.Model):
         null=True,
         blank=True,
     )
+
+
+class PostMedia(models.Model):
+    "Generated Model"
+    post = models.ForeignKey(
+        "home.Post",
+        on_delete=models.CASCADE,
+        related_name="postmedia_post",
+    )
+    video = models.URLField()
