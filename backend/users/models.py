@@ -24,9 +24,9 @@ class User(AbstractUser):
         max_length=255,
     )
     phone_number = models.CharField(
-        max_length=25,
         null=True,
         blank=True,
+        max_length=25,
     )
 
     def get_absolute_url(self):
