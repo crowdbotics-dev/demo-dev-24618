@@ -18,3 +18,7 @@ class Post(models.Model):
     updated_at = models.DateTimeField(
         auto_now=True,
     )
+    image = models.URLField(
+        null=True,
+        blank=True,
+    )
