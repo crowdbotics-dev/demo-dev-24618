@@ -32,3 +32,16 @@ class PostMedia(models.Model):
         related_name="postmedia_post",
     )
     video = models.URLField()
+
+
+class Image(models.Model):
+    "Generated Model"
+    user = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+        related_name="image_user",
+    )
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+    )
+    image_url = models.URLField()

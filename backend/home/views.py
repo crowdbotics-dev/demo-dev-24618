@@ -1,4 +1,4 @@
-from .models import Post
+from .models import PostMedia, Post
 from django.views.generic import CreateView, UpdateView, DetailView, ListView
 from django.shortcuts import render
 
